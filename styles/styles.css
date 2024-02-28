@@ -73,6 +73,11 @@ body.appear {
   display: block;
 }
 
+body.purple {
+  --background-color: #9370DB;
+  --text-color: #fff;
+}
+
 header {
   height: var(--nav-height);
 }
