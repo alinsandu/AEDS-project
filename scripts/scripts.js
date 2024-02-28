@@ -46,9 +46,13 @@ async function loadFonts() {
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
-function buildAutoBlocks(main) {
+async function buildAutoBlocks(main) {
   try {
     buildHeroBlock(main);
+    const template = await import('../templates/two-columns/two-columns.js');
+    if (template.default) {
+      await template.default(main);
+    }
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
