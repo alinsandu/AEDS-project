@@ -1,4 +1,4 @@
-import { loadCSS } from '../../scripts/aem';
+import { loadCSS } from '../../scripts/aem.js';
 
 /**
  * Checks if the ratio is different from 50-50 and applies the ratio to its column respectively

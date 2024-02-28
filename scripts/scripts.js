@@ -49,7 +49,7 @@ async function loadFonts() {
 async function buildAutoBlocks(main) {
   try {
     buildHeroBlock(main);
-    const template = await import('../templates/two-columns/two-columns.js');
+    const template = await import(`${window.hlx.codeBasePath}/templates/two-columns/two-columns.js`);
     if (template.default) {
       await template.default(main);
     }
