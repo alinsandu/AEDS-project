@@ -35,11 +35,15 @@
 .accordion .item-content {
   display: none;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 24px;
   padding: 12px;
   border-bottom: 1px solid #dddddd;
 }
 
 .accordion .item-title.open + .item-content {
   display: grid;
+}
+
+.accordion img {
+  width: 100%;
 }
