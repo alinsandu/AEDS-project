@@ -73,6 +73,7 @@ body.appear {
   display: block;
 }
 
+/* custom theme purple */
 body.purple {
   --background-color: #9370DB;
   --text-color: #fff;
